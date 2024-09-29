@@ -1,0 +1,155 @@
+@import "../../vars";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 2/1;
+  position: relative;
+  border-radius: 2em;
+  box-shadow: 0px 18px 26px -10px rgb(0, 0, 0);
+}
+
+.card_title {
+  position: absolute;
+  top: -1%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  font-family: "Racing Sans One", sans-serif;
+  font-size: clamp(0.9375rem, 0.1339rem + 4.0179vw, 3.75rem);
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 5px;
+}
+
+.card_season {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  font-family: "Racing Sans One", sans-serif;
+  font-size: clamp(0.75rem, 0.5357rem + 1.0714vw, 1.5rem);
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 5px;
+}
+
+.card_blocks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: inherit;
+}
+
+.card_main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 100%;
+  position: relative;
+  background: linear-gradient(
+    to left,
+    rgb(52 80 90),
+    rgb(117 192 223),
+    rgb(117 192 223)
+  );
+}
+
+.card_main_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  bottom: 10%;
+}
+
+.sizes {
+  display: block;
+  text-align: center;
+}
+
+.size,
+.size_active {
+  font-family: "Electrolize", sans-serif;
+  font-size: clamp(0.625rem, 0.2679rem + 1.7857vw, 1.875rem);
+  border: 1px solid black;
+  border-bottom: 0;
+  padding: 0 0.2em;
+}
+
+.size:last-child,
+.size_active:last-child {
+  border: 1px solid black;
+}
+
+.size {
+  background-color: rgb(128, 128, 128);
+}
+
+.size_active {
+  background-color: rgb(255, 255, 255);
+}
+
+.card_complect {
+  font-family: "Electrolize", sans-serif;
+  font-size: clamp(0.625rem, 0.2679rem + 1.7857vw, 1.875rem);
+}
+
+.card_images {
+  display: block;
+  width: 80%;
+  height: 90%;
+}
+
+.card_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.card_image:nth-child(1n) {
+  background-color: rgb(206, 17, 17);
+}
+
+.card_image:nth-child(2n) {
+  background-color: rgb(0, 140, 255);
+}
+
+.card_image:nth-child(3n) {
+  background-color: rgb(10, 184, 111);
+}
+
+.card_aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  height: 100%;
+  background-color: rgb(252 196 49);
+}
+.card_name {
+}
+.card_description {
+}
+
+@media screen and (max-width: $mobile) {
+  .card {
+    border-radius: 1.5em;
+  }
+}
