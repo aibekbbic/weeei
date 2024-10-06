@@ -47,8 +47,9 @@ const Card = () => {
           <div className={styles.card_aside}>
             <a
               className={styles.card_link}
-              href="wa.me/393509955046"
+              href="https://api.whatsapp.com/send/?phone393509955046&text=Здравствуйте%2C+у+меня+есть+вопрос"
               target="_blank"
+              rel="noreferrer"
             >
               <SlBasket />
             </a>
