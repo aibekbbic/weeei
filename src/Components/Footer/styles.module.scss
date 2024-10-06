@@ -1,3 +1,15 @@
-footer {
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  aspect-ratio: 6/1;
   flex: 0 0 auto;
+  column-gap: 0.4em;
+}
+.footer * {
+  font-family: "Racing Sans One", sans-serif;
+  font-size: clamp(0.5rem, 0.1071rem + 1.9643vw, 1.875rem);
+  color: rgb(255, 255, 255);
 }

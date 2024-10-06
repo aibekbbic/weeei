@@ -7,10 +7,10 @@ const Footer = () => {
   };
 
   return (
-    <div className={styles.footer}>
+    <footer className={styles.footer}>
       <small>Weeei Aibe kits</small>
       <small>{footerDate()}</small>
-    </div>
+    </footer>
   );
 };
 

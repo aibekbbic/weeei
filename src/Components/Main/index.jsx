@@ -3,11 +3,11 @@ import styles from "./styles.module.scss";
 
 const Main = () => {
   return (
-    <div className={styles.main}>
+    <main className={styles.main}>
       <div className={styles.main_container}>
         <Cards />
       </div>
-    </div>
+    </main>
   );
 };
 
