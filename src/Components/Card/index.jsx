@@ -47,7 +47,7 @@ const Card = () => {
           <div className={styles.card_aside}>
             <a
               className={styles.card_link}
-              href="https://wa.me/393509955046"
+              href="https://www.wa.me/393509955046"
               target="_blank"
               rel="noreferrer"
             >
